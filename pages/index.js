@@ -1,21 +1,16 @@
-import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+/* ./pages/index.js               */
+import Head from 'next/head';
+import { Navbar } from '../components/Navbar';
 
 export default function Home() {
   return (
-    <div className="container">
+    <div>
       <Head>
-        <title>Next.js Starter!</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Create Next App</title>
+        <link rel='icon' href='/favicon.ico' />
       </Head>
-
-      <main>
-        <Header title="Welcome to slaskhas app!" />
-        <p className="description">
-        </p>
-      </main>
-
+      <Navbar />
+      <div>Hello World</div>
     </div>
-  )
+  );
 }
